@@ -9,7 +9,7 @@ Setup env and install requirements
 
 ```./venv/Scripts/Activate.bat```
 
-```pip install -r ./requirements.txt````
+```pip install -r ./requirements.txt```
 
 ### Run
 
