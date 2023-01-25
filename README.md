@@ -1,7 +1,15 @@
 ## API for AI Models
 
 ### Instalation
-Setup env adn install requirements
+Setup env and install requirements
+
+#### For Windows
+
+```python3 -m venv ./venv```
+
+```./venv/Scripts/Activate.bat```
+
+```pip install -r ./requirements.txt````
 
 ### Run
 
