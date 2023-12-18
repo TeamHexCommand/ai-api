@@ -59,7 +59,7 @@ def read_item(img: str):
     return {"img": requests.utils.unquote(img), "caption": ans}
 
 @app.get("/openai/question/{prompt}")
-def read_item(prompt: str):
+def openai_questions(prompt: str):
     completion = openai.Completion.create(
         engine=model_engine,
         prompt=prompt,
@@ -72,7 +72,7 @@ def read_item(prompt: str):
 
 
 @app.get("/image/removebg/{img}")
-def read_item(img: str):
+def image_removebg(img: str):
     ans = removeBackground(requests.utils.unquote(img))
     image_url = get_image_url(ans)
     if image_url:
