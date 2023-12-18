@@ -1,5 +1,6 @@
 from typing import Union
-from fastapi import FastAPI, FileResponse
+from fastapi import FastAPI
+from fastapi.responses import FileResponse
 from PIL import Image
 import requests
 from transformers import BlipProcessor, BlipForConditionalGeneration
